@@ -67,6 +67,8 @@ public class MainActivity extends ActionBarActivity {
                 editor.putInt(PreferenceConstants.ENABLED_DURATION,
                         Integer.parseInt(enabledDurationEditText.getText().toString()));
 
+                editor.commit();
+
                 if (checked) {
                     scheduleRepeatingAlarm(intervalDurationInMinutes);
                 } else {
