@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Checker"
+        android:id="@+id/checker"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="Polling time (minutes)" />
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="70dp"
+        android:id="@+id/pollingTime"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="Wifi/Data enabled time (minutes)" />
+
+    <EditText
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="70dp"
+        android:id="@+id/enabledTime"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="100dp"
+        android:id="@+id/save"
+        android:text="Save"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
