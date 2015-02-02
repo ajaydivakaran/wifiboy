@@ -27,7 +27,7 @@ public class NetworkConnectionManager {
         boolean dataEnabled = false;
 
         NetworkInfo activeNetworkInfo = getNetworkInfo(context);
-        if(activeNetworkInfo != null && activeNetworkInfo.getType() == ConnectivityManager.TYPE_WIFI){
+        if(activeNetworkInfo != null && activeNetworkInfo.getType() == ConnectivityManager.TYPE_MOBILE){
             dataEnabled = activeNetworkInfo.getType() == ConnectivityManager.TYPE_MOBILE;
         }
 
