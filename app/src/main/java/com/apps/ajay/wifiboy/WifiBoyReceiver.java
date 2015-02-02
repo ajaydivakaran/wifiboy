@@ -43,12 +43,12 @@ public class WifiBoyReceiver extends BroadcastReceiver {
                     Thread.sleep(PreferenceConstants.WIFI_WAIT_TIME_IN_SECONDS * 1000);
                     if(NetworkConnectionManager.isWifiEnabled(currentContext)){
                         Log.d(TAG, "Wifi is enabled");
-                        scheduleAlarmToShutdownWifi(currentContext);
                     }
                     else{
                         Log.e(TAG, "Wifi still disabled falling back to mobile data");
                         NetworkConnectionManager.setMobileDataEnabled(currentContext, true);
                     }
+                    scheduleAlarmToShutdownWifi(currentContext);
                 }
                 catch (Exception ex){
                  Log.e(TAG, ex.getMessage());
